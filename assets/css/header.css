@@ -1,5 +1,5 @@
 header {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(71, 71, 71, 0.1);
     position: fixed;
     width: 100%;
     top: 0px;
@@ -9,6 +9,7 @@ header {
 
 .main-header {
     display: flex;
+    padding-block: 10px ;
     justify-content: space-between;
 }
 .main-header .header-right {
