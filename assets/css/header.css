@@ -1,0 +1,58 @@
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    padding: 0.5rem 7.5rem 0;
+    width: 100%;
+    top: 0px;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+.main-header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.menuItems {
+    width: 100%;
+    height: 100%;
+}
+
+.menuItems ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: inherit;
+}
+
+.menuItems ul li {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding-inline: 1.5rem;
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+}
+
+.menuItems ul li.active {
+    /* background: rgb(104,31,43);
+    background: linear-gradient(0deg, rgba(104,31,43,1) 0%, rgba(213,168,168,1) 20%, rgba(255,255,255,1) 100%); */
+    background: rgb(105, 105, 105);
+    background: linear-gradient(0deg, rgba(105, 105, 105, 1) 0%, rgba(232, 232, 232, 1) 20%, rgba(255, 255, 255, 0) 100%);
+}
+
+.menuItems ul li a {
+    color: #3d3d3d;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menuItems ul li.active a {
+color: #2b2b2b;
+}
