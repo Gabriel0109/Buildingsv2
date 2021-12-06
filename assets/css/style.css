@@ -1,12 +1,10 @@
 body {
     margin: 0;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
     padding: 0;
 }
-#bannerInitial {
-    background: url('../images/ben-wicks-4y_LlKIcDgI-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
+
+section{
+    padding: 120px 0px;
 }

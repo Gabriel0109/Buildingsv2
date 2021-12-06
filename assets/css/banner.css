@@ -1,0 +1,41 @@
+#bannerInitial {
+    background: url('../images/sean-pollock-PhYq704ffdA-unsplash.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: grayscale(30%);
+}
+.bg-1{
+    background-color: rgba(0, 0, 0, .5);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+.banner-inner{
+    display: flex;
+    height: 500px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    
+}
+.banner-inner h1{
+    text-transform: uppercase;
+    border-left: 9px solid #681f2b;
+    padding: 3rem;
+    letter-spacing:7px;
+    font-size: 64px;
+}
+/* .banner-inner h1::after{
+    content: '';
+    height: 100px;
+    width: 9px;
+    position: absolute;
+    background-color: #681f2b;
+} */
