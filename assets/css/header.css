@@ -49,5 +49,7 @@ header {
 }
 .menuItems ul li.active a {
     color: rgb(104,31,43);
+    font-size: 24px;
+    font-weight: 500;
 }
 
