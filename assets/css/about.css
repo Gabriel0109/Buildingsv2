@@ -1,11 +1,14 @@
 #about{
     height: 900px;
     padding: 100px 0px !important;
-    /* background-image: url('../images/background-about.png'); */
     background-size: cover;
 }
 .section-title{
     border-left: 4px solid rgb(104,31,43);
+    margin-bottom: 2rem;
+}
+.section-title-maroon{
+    border-right: 4px solid #fff;
     margin-bottom: 2rem;
 }
 .box1{

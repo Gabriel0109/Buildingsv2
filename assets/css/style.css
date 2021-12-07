@@ -4,7 +4,9 @@ body {
     font-family: 'Poppins', sans-serif;
     padding: 0;
 }
-
 section{
     padding: 120px 0px;
+}
+.bg-maroon{
+    background-color: rgb(104,31,43);
 }
