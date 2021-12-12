@@ -1,6 +1,6 @@
 
 .cardWrapper{
-    width:400px !important;
+    width:100% !important;
     height:400px !important;
     position:relative;
     float:left;
@@ -11,13 +11,19 @@
   
   .cardFace{
     position:absolute;
-    width:400px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100% !important;
     height:400px !important;
     overflow:hidden;
+    /* background-color: rgba(0, 0, 0, .2); */
   }
   
-  .front{
-    background-color:#333; 
+  .bg-value1 .front{
+      background-image: url(../images/values1.jpeg);
+      background-size: cover;
+
   }
   
   .back{
@@ -30,10 +36,8 @@
     margin:0px;
     font-size:30px;
     padding:10px 0px 10px 10px;
-    border-bottom:solid 6px #aaa;
-    border-top:solid 6px #aaa;
-    background-color:black;
     color:white;
+    z-index: 1;
   }
   
   
