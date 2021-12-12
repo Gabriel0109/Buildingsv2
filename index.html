@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/banner.css">
@@ -136,22 +139,34 @@
     <section id="portfolio">
         <div class="grid-portfolio">
             <div class="imagem-1">
-                <img src="/assets/images/portfolio/imagem-1.jpeg" alt="Portfolio">
+                <a href="/assets/images/portfolio/imagem-1.jpeg" class="without-caption image-link">
+                    <img src="/assets/images/portfolio/imagem-1.jpeg" alt="Portfolio">
+                </a>
             </div>
             <div class="imagem-2">
-                <img src="/assets/images/portfolio/imagem-2.jpeg" alt="Portfolio">
+                <a href="/assets/images/portfolio/imagem-2.jpeg" class="without-caption image-link">
+                    <img src="/assets/images/portfolio/imagem-2.jpeg" alt="Portfolio">
+                </a>
             </div>
             <div class="imagem-3">
-                <img src="/assets/images/portfolio/imagem-3.jpeg" alt="Portfolio">
+                <a href="/assets/images/portfolio/imagem-3.jpeg" class="without-caption image-link">
+                    <img src="/assets/images/portfolio/imagem-3.jpeg" alt="Portfolio">
+                </a>
             </div>
             <div class="imagem-4">
-                <img src="/assets/images/portfolio/imagem-4.jpeg" alt="Portfolio">
+                <a href="/assets/images/portfolio/imagem-4.jpeg" class="without-caption image-link">
+                    <img src="/assets/images/portfolio/imagem-4.jpeg" alt="Portfolio">
+                </a>
             </div>
             <div class="imagem-5">
-                <img src="/assets/images/portfolio/imagem-5.jpeg" alt="Portfolio">
+                <a href="/assets/images/portfolio/imagem-5.jpeg" class="without-caption image-link">
+                    <img src="/assets/images/portfolio/imagem-5.jpeg" alt="Portfolio">
+                </a>
             </div>
             <div class="imagem-6">
-                <img src="/assets/images/portfolio/imagem-6.jpeg" alt="Portfolio">
+                <a href="/assets/images/portfolio/imagem-6.jpeg" class="without-caption image-link">
+                    <img src="/assets/images/portfolio/imagem-6.jpeg" alt="Portfolio">
+                </a>
             </div>
         </div>
     </section>
@@ -187,9 +202,15 @@
     <!-- JQUERY MIN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/gsap.min.js"></script>
+    <script src="./assets/js/portfolioImageZoom.js"></script>
     <script>
         gsap.set(".cardWrapper", {
             perspective: 800
