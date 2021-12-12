@@ -26,8 +26,9 @@
 
   }
   
-  .back{
-    background-color:#333; 
+  .bg-value1 .back{
+      background-image: url(../images/values1-back.jpg);
+      background-size: cover;
   }
   
   
