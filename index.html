@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/banner.css">
     <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
 
 </head>
 
@@ -32,7 +33,7 @@
                     <ul>
                         <li class="active"><a href="#bannerInitial">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#port">Portfolio</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -119,6 +120,29 @@
 
     </section>
 
+    <section id="portfolio">
+        <div class="grid-portfolio">
+            <div class="imagem-1">
+                <img src="/assets/images/ben-wicks-4y_LlKIcDgI-unsplash.jpg" alt="Portfolio">
+            </div>
+            <div class="imagem-2">
+                <img src="/assets/images/sean-pollock-PhYq704ffdA-unsplash.jpeg" alt="Portfolio">
+            </div>
+            <div class="imagem-3">
+                <img src="/assets/images/ben-wicks-4y_LlKIcDgI-unsplash.jpg" alt="Portfolio">
+            </div>
+            <div class="imagem-5">
+                <img src="/assets/images/ben-wicks-4y_LlKIcDgI-unsplash.jpg" alt="Portfolio">
+            </div>
+            <div class="imagem-6">
+                <img src="/assets/images/sean-pollock-PhYq704ffdA-unsplash.jpeg" alt="Portfolio">
+            </div>
+            <div class="imagem-7">
+                <img src="/assets/images/values1.jpeg" alt="Portfolio">
+            </div>
+        </div>
+    </section>
+
     <!-- JQUERY MIN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -126,23 +150,44 @@
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/gsap.min.js"></script>
     <script>
-        gsap.set(".cardWrapper", { perspective: 800 });
-        gsap.set(".card", { transformStyle: "preserve-3d" });
-        gsap.set(".back", { rotationY: -180 });
-        gsap.set([".back", ".front"], { backfaceVisibility: "hidden" });
+        gsap.set(".cardWrapper", {
+            perspective: 800
+        });
+        gsap.set(".card", {
+            transformStyle: "preserve-3d"
+        });
+        gsap.set(".back", {
+            rotationY: -180
+        });
+        gsap.set([".back", ".front"], {
+            backfaceVisibility: "hidden"
+        });
 
         $(".cardWrapper").hover(
             function () {
-                gsap.to($(this).find(".card"), { duration: 1.2, rotationY: 180, ease: Back.easeOut });
+                gsap.to($(this).find(".card"), {
+                    duration: 1.2,
+                    rotationY: 180,
+                    ease: Back.easeOut
+                });
             },
             function () {
-                gsap.to($(this).find(".card"), { duration: 1.2, rotationY: 0, ease: Back.easeOut });
+                gsap.to($(this).find(".card"), {
+                    duration: 1.2,
+                    rotationY: 0,
+                    ease: Back.easeOut
+                });
             }
         );
 
         //a nice little intro;
-        gsap.to($(".card"), { duration: 1, rotationY: -180, repeat: 1, yoyo: true, stagger: 0.1 });
-
+        gsap.to($(".card"), {
+            duration: 1,
+            rotationY: -180,
+            repeat: 1,
+            yoyo: true,
+            stagger: 0.1
+        });
     </script>
 </body>
 
