@@ -1,0 +1,46 @@
+#portfolio .grid-portfolio {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "imagem-1 imagem-1 imagem-2 imagem-2 imagem-3"
+        "imagem-7 imagem-7 imagem-7 imagem-5 imagem-3"
+        "imagem-7 imagem-7 imagem-7 imagem-5 imagem-6";
+}
+
+#portfolio .imagem-1 {
+    grid-area: imagem-1;
+}
+
+#portfolio .imagem-2 {
+    grid-area: imagem-2;
+}
+
+#portfolio .imagem-3 {
+    grid-area: imagem-3;
+}
+
+#portfolio .imagem-5 {
+    grid-area: imagem-5;
+}
+
+#portfolio .imagem-6 {
+    grid-area: imagem-6;
+}
+
+#portfolio .imagem-7 {
+    grid-area: imagem-7;
+}
+
+#portfolio img {
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio {
+    padding-top: 0;
+}
