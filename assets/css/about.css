@@ -1,17 +1,25 @@
 #about{
-    height: 900px;
+    /* height: 900px; */
     padding: 100px 0px !important;
     background-size: cover;
 }
 .section-title{
-    border-left: 4px solid rgb(104,31,43);
+    border-left: 4px solid #fff;
     margin-bottom: 2rem;
+    width: 29%;
 }
 .section-title-maroon{
-    border-right: 4px solid #fff;
+    border-left: 4px solid #fff;
     margin-bottom: 2rem;
+    color: #fff;
 }
-.box1{
+.card-about{
+    padding: 70px 0px;
+    background-color: rgb(104,31,43);
+    color: #fff;
+    line-height: 2rem;
+}
+/* .box1{
     height: 300px;
     width: 500px;
     position: absolute;
@@ -29,7 +37,7 @@
     right:  100px;
     margin-top: 10px;
     box-shadow: -100px 80px 0px 0px rgba(0, 0, 0, 0.2);
-}
+} */
 .img-about{
     position: relative;
     left: 150px;

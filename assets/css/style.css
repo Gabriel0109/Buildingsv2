@@ -1,12 +1,12 @@
 /* #681f2b */
 /* #808077 */
 
-
 body {
     margin: 0;
     max-width: 100%;
     font-family: 'Poppins', sans-serif;
     padding: 0;
+    overflow-x: hidden;
 }
 section{
     padding: 120px 0px;
@@ -14,3 +14,7 @@ section{
 .bg-maroon{
     background-color: rgb(104,31,43);
 }
+/* ::selection{
+    background: rgb(104,31,43) ;
+    color: #fff;
+} */
