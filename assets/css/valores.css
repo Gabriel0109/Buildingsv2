@@ -27,11 +27,31 @@
   }
   
   .bg-value1 .back{
-      background-image: url(../images/values1-back.jpg);
+      background-image: url(../images/values1-back.jpeg);
+      background-position: center center;
       background-size: cover;
   }
   
-  
+  .bg-value2 .front{
+    background-image: url(../images/values2.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-value2 .back{
+    background-image: url(../images/values2-back.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-value3 .front{
+    background-image: url(../images/values3.jpeg);
+    background-position: center center;
+    background-size: cover;
+  }
+  .bg-value3 .back{
+    background-image: url(../images/values3-back.jpeg);
+    background-position: center center;
+    background-size: cover;
+  }
   
   .cardFace h1{
     margin:0px;
