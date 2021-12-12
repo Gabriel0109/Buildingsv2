@@ -8,8 +8,8 @@
     grid-auto-flow: row;
     grid-template-areas:
         "imagem-1 imagem-1 imagem-2 imagem-2 imagem-3"
-        "imagem-7 imagem-7 imagem-7 imagem-5 imagem-3"
-        "imagem-7 imagem-7 imagem-7 imagem-5 imagem-6";
+        "imagem-4 imagem-4 imagem-4 imagem-5 imagem-3"
+        "imagem-4 imagem-4 imagem-4 imagem-5 imagem-6";
 }
 
 #portfolio .imagem-1 {
@@ -24,16 +24,16 @@
     grid-area: imagem-3;
 }
 
+#portfolio .imagem-4 {
+    grid-area: imagem-4;
+}
+
 #portfolio .imagem-5 {
     grid-area: imagem-5;
 }
 
 #portfolio .imagem-6 {
     grid-area: imagem-6;
-}
-
-#portfolio .imagem-7 {
-    grid-area: imagem-7;
 }
 
 #portfolio img {
