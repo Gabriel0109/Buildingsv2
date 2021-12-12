@@ -4,14 +4,17 @@
     background-size: cover;
 }
 .section-title{
-    border-left: 4px solid #fff;
+    border-left: 4px solid rgb(104,31,43);
     margin-bottom: 2rem;
-    width: 29%;
+    display: inline-block;
+    padding-left: 15px;
+    /* margin-right: px; */
 }
 .section-title-maroon{
-    border-left: 4px solid #fff;
+    border-left: 4px solid #fff !important;
     margin-bottom: 2rem;
     color: #fff;
+    width: 29%;
 }
 .card-about{
     padding: 70px 0px;

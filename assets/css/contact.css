@@ -1,0 +1,19 @@
+.contact-title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#contact{
+    padding-top: 0px;
+}
+.btn-contact{
+    background-color: rgb(104,31,43) ;
+    color: #fff;
+    width: 200px ;
+    transition: 0.3s all;
+}
+.btn-contact:hover{
+    background-color: #fff ;
+    color:rgb(104,31,43) ;
+    border: 1px solid rgb(104,31,43);
+}

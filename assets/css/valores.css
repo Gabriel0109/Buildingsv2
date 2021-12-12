@@ -1,4 +1,7 @@
-
+#values{
+  padding: 0px;
+  padding-bottom: 120px;
+}
 .cardWrapper{
     width:100% !important;
     height:400px !important;
@@ -57,13 +60,20 @@
     margin:0px;
     font-size:30px;
     padding:10px 0px 10px 10px;
+    border-bottom: 4px solid rgb(104,31,43);
     color:white;
     z-index: 1;
   }
   
   
-  .cardFace.back h1{
-   border-color:#91e600;
+  
+  .cardFace.back p{
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 18px;
+    padding-inline: 25px;
   }
   
   .moreInfo{
