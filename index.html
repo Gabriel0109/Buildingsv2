@@ -27,6 +27,7 @@
 
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/header-sm.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/banner.css">
     <link rel="stylesheet" href="assets/css/about.css">
@@ -36,10 +37,11 @@
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+
 </head>
 
 <body>
-    <header>
+    <header class="header-lg">
         <nav class="main-header container">
             <div class="header-left">
                 <a href="/">
@@ -59,6 +61,51 @@
         </nav>
     </header>
 
+    <header id="header" class="nav-down header-sm">
+        <div class="wrap">
+          <div class="logo">
+            <a href="/">
+                <img src="assets/images/logo_white.svg" height="50" alt="Rauss Logo">
+            </a>
+          </div>
+          <a class="hamburger">
+            <div class="line top"></div>
+            <div class="line middle"></div>
+            <div class="line bottom"></div>
+          </a> 
+        </div>
+      </header>
+      <div id="menu-wrap">
+        <div class="stripe"></div>
+          <nav class="navigation">
+              <ul>
+                  <li>
+                      <a href="/">
+                          <span data-text="Home"></span>
+                          Home
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#about">
+                          <span data-text="About"></span>
+                          About
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#portfolio">
+                          <span data-text="Portfólio"></span>
+                          Portfólio
+                      </a>
+                  </li>
+                  <li>
+                    <a href="#contact">
+                        <span data-text="Contato"></span>
+                        Contato
+                    </a>
+                </li>
+              </ul>
+          </nav>
+      </div> 
     <section id="bannerInitial">
         <div class="bg-1"></div>
         <div class="container">
@@ -71,12 +118,10 @@
 
     <section id="about">
         <div class="container">
-            <!-- <div class="box1"></div>
-            <div class="box2"></div> -->
             <div class="card-about">
-                <div class="row w-100 justify-content-center">
-                    <h1 class="section-title-maroon  text-center">Sobre a empresa.</h1>
-                    <div class="col-lg-10 ps-3">
+                <div class="row w-100 mx-auto justify-content-center">
+                <h1 class="section-title-maroon  text-center">Sobre a empresa.</h1>
+                    <div class="col-lg-10 ">
                         Rauss é uma referência a BAUHAUS uma das mais importantes Escolas de Design e Arquitetura do
                         século
                         XX. Era também um grupo de pessoas vanguardistas, ou seja, que estavam à frente do seu tempo,
@@ -88,9 +133,6 @@
                         ”SS”
                         a modernidade e inovação que o emprego de duas consoantes repetidas proporciona.
                     </div>
-                    <!-- <div class="col-lg-6">
-                        <img class="img-about" src="./assets/images/tom-podmore-SxZAsZFfAUI-unsplash.jpeg" height="500" width="400" alt="">
-                    </div> -->
                 </div>
             </div>
 
@@ -295,6 +337,67 @@
             yoyo: true,
             stagger: 0.1
         });
+    </script>
+    <script>
+        var $hamburger = $('.hamburger');
+
+TweenLite.set('.top',{x:0});  
+TweenLite.set('.bottom',{x:0});
+TweenLite.set('#menu-wrap', {yPercent: -100});
+TweenLite.set('.stripe', {yPercent:100});
+TweenLite.set('.navigation li',{x:-280}); 
+
+var hamburgerMotion = new TimelineMax()
+.to('.bottom',0.2,{x:-4, ease:Power2.easeInOut},0)
+.to('.top',0.2,{x:4, ease:Power2.easeInOut},0)
+.to('#menu-wrap',0.3,{yPercent:0},0)
+.to('.stripe', 0.5, {yPercent:0}, '-=.1')
+.staggerTo('.navigation li',0.3,{x:0,ease: Sine.easeOut},0.2,0.5)
+.reverse()
+
+$hamburger.on('click', function(e) {
+  hamburgerMotion.reversed(!hamburgerMotion.reversed());
+  $('body').toggleClass('active-menu');
+});
+
+// Hide header on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    if (st > lastScrollTop && st > navbarHeight){
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+  
+    lastScrollTop = st;
+}
+
+
+
+
     </script>
 </body>
 

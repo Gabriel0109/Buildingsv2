@@ -8,40 +8,16 @@
     margin-bottom: 2rem;
     display: inline-block;
     padding-left: 15px;
-    /* margin-right: px; */
 }
 .section-title-maroon{
     border-left: 4px solid #fff !important;
     margin-bottom: 2rem;
     color: #fff;
-    width: 29%;
+    width: 30%;
 }
 .card-about{
     padding: 70px 0px;
     background-color: rgb(104,31,43);
     color: #fff;
     line-height: 2rem;
-}
-/* .box1{
-    height: 300px;
-    width: 500px;
-    position: absolute;
-    background-color: rgb(104,31,43);
-    z-index: -1;
-    left: 0;
-    margin-top: 350px;
-}
-.box2{
-    height: 250px;
-    width: 350px;
-    position: absolute;
-    background-color: rgb(104,31,43);
-    z-index: -1;
-    right:  100px;
-    margin-top: 10px;
-    box-shadow: -100px 80px 0px 0px rgba(0, 0, 0, 0.2);
-} */
-.img-about{
-    position: relative;
-    left: 150px;
 }

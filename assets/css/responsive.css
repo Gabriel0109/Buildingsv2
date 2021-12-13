@@ -1,14 +1,28 @@
-@media screen and (max-width: 1400px) {
-    
+@media screen and (min-width: 1400px) {
+    .header-sm{
+        display: none !important;
+    }
+    .header-lg{
+        display: block !important;
+    }
 }
 @media screen and (max-width: 1280px) {
     .banner-inner {
         width: unset;
     }
+    .header-sm{
+        display: none !important;
+    }
+    .header-lg{
+        display: block;
+    }
 }
 @media screen and (max-width: 992px) {
-    .main-header .header-right {
+    .header-lg  {
         display: none;
+    }
+    .header-sm{
+        display: block !important;
     }
     .banner-inner {
         width: unset;
