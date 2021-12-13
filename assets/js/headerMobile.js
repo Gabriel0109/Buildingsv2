@@ -12,9 +12,8 @@ TweenLite.set('#menu-wrap', {
 TweenLite.set('.stripe', {
     yPercent: 100
 });
-// TweenLite.set('.navigation',{xPercent:-50, yPercent:-50});
 TweenLite.set('.navigation li', {
-    x: -112
+    x: -180
 });
 
 var hamburgerMotion = new TimelineMax()
