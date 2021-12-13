@@ -47,7 +47,23 @@
     .sm-mb-5 {
         margin-bottom: 10px;
     }
-
+    #portfolio .grid-portfolio {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "imagem-1 imagem-1 imagem-2 imagem-2"
+            "imagem-4 imagem-4 imagem-4 imagem-4"
+            "imagem-4 imagem-4 imagem-4 imagem-4"
+            "imagem-4 imagem-4 imagem-4 imagem-4"
+            "imagem-3 imagem-3 imagem-5 imagem-5"
+            "imagem-3 imagem-3 imagem-5 imagem-5"
+            "imagem-6 imagem-6 imagem-6 imagem-6";
+    }
 }
 @media screen and (max-width: 400px) {
     
