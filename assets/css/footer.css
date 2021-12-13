@@ -1,8 +1,5 @@
 footer {
     background: rgb(104, 31, 43);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 70px;
     max-width: 100%;

@@ -2,21 +2,34 @@
     
 }
 @media screen and (max-width: 1280px) {
-    
+    .banner-inner {
+        width: unset;
+    }
 }
 @media screen and (max-width: 992px) {
     .main-header .header-right {
         display: none;
+    }
+    .banner-inner {
+        width: unset;
     }
 }
 @media screen and (max-width: 767px) {
     .banner-inner {
         display: flex;
         flex-direction: column;
+        width: unset;
+    }
+    .section-title-maroon{
+        width: 50%;
+    }
+    .card-about .col-lg-10{
+        text-align: center;
     }
     footer {
         display: flex;
         flex-direction: column;
+        width: unset !important;
     }
     footer span {
         justify-self: center;
