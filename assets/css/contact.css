@@ -17,3 +17,10 @@
     color:rgb(104,31,43) ;
     border: 1px solid rgb(104,31,43);
 }
+.form-label {
+    margin-bottom: 0.2rem;
+}
+.form-control {
+    height: 50px;
+    margin-bottom: 10px;
+}

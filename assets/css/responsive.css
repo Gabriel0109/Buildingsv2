@@ -64,6 +64,23 @@
             "imagem-3 imagem-3 imagem-5 imagem-5"
             "imagem-6 imagem-6 imagem-6 imagem-6";
     }
+    section .container {
+        padding-inline: 0;
+    }
+    #about {
+        padding-block: 10px !important;
+    }
+    #values {
+        width: 100%;
+        padding-bottom: 1.5rem !important;
+    }
+    .form-label {
+        margin-bottom: 0.2rem;
+    }
+    .form-control {
+        height: 50px;
+        margin-bottom: 10px;
+    }
 }
 @media screen and (max-width: 400px) {
     
