@@ -18,7 +18,8 @@
     .banner-inner {
         display: flex;
         flex-direction: column;
-        width: unset;
+        width: 100%;
+        padding-left: 10px;
     }
     .section-title-maroon{
         width: 50%;
