@@ -9,9 +9,10 @@ header {
 
 .main-header {
     display: flex;
-    padding-block: 10px ;
+    padding-block: 10px;
     justify-content: space-between;
 }
+
 .main-header .header-right {
     display: flex;
     align-items: center;
@@ -47,8 +48,9 @@ header {
     text-decoration: none;
     text-transform: uppercase;
 }
+
 .menuItems ul li.active a {
-    color: rgb(104,31,43);
+    color: rgb(104, 31, 43);
     font-size: 24px;
     font-weight: 500;
 }
@@ -57,7 +59,123 @@ header img {
     min-width: 100px;
     min-height: 50px;
 }
+
 .header-left a {
     width: 100%;
     height: 100%;
+}
+
+
+
+/* -------------------------------------- */
+#header {
+    background:rgba(0,0,0,.6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 2;
+    transition: top 0.2s ease-in-out;
+}
+
+#header .wrap {
+    display: flex;
+}
+#header .nav-up {
+    top: -100px;
+}
+
+#menu-wrap {
+    background: #0ff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.stripe {
+    background: #000;
+    height: 100vh;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#menu-wrap .navigation {
+    margin-left: 30px;
+    padding-top: 1.875rem;
+    overflow: hidden;
+}
+
+#menu-wrap .navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.625rem;
+    transition: opacity .3s ease-in;
+}
+
+#menu-wrap .navigation li {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+#menu-wrap .navigation li:before {
+    display: none;
+}
+
+#menu-wrap .navigation li a {
+    color: #000;
+    text-decoration: none;
+    transition: color .3s;
+    position: relative;
+    overflow: hidden;
+    display: inline-block
+}
+
+#menu-wrap .navigation li a:hover {
+    color: #fff
+}
+
+#menu-wrap .navigation li a span {
+    position: absolute;
+    left: -1px;
+    overflow: hidden;
+    background-color: #0ff;
+    width: 100%;
+    display: block;
+    transform: translate3d(-100%, 0, 0);
+    animation: layer-out .3s ease-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+#menu-wrap .navigation li a span:before {
+    background-color: #0ff;
+    content: attr(data-text);
+    width: 100%;
+    display: block;
+    transform: translate3d(100%, 0, 0);
+    color: #fff;
+    animation: text-out .3s ease-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+#menu-wrap .navigation li a:hover span {
+    animation: layer-in .3s ease forwards
+}
+
+#menu-wrap .navigation li a:hover span:before {
+    animation: text-in .3s ease forwards
 }

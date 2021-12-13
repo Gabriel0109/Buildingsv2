@@ -44,11 +44,18 @@
     <header class="header-lg">
         <nav class="main-header container">
             <div class="header-left">
-                <a href="/">
-                    <img src="assets/images/logo_white.svg" height="50" alt="Rauss Logo">
-                </a>
+                <div class="logo">
+                    <a href="/">
+                        <img src="assets/images/logo_white.svg" height="50" alt="Rauss Logo">
+                    </a>
+                </div>
             </div>
             <div class="header-right">
+                <a class="hamburger">
+                    <div class="line top"></div>
+                    <div class="line middle"></div>
+                    <div class="line bottom"></div>
+                </a> 
                 <div class="menuItems">
                     <ul>
                         <li class="active"><a href="#bannerInitial">Home</a></li>
@@ -58,6 +65,31 @@
                     </ul>
                 </div>
             </div>
+            <div id="menu-wrap">
+                <div class="stripe"></div>
+                  <nav class="navigation">
+                      <ul>
+                          <li>
+                              <a href="#one">
+                                  <span data-text="One"></span>
+                                  One
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#two">
+                                  <span data-text="Two"></span>
+                                  Two
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#three">
+                                  <span data-text="Three"></span>
+                                  Three
+                              </a>
+                          </li>
+                      </ul>
+                  </nav>
+              </div> 
         </nav>
     </header>
 
@@ -254,7 +286,7 @@
                             <button class="btn btn-contact" type="submit">Enviar</button>
                         </div>
                     </div>
-              
+
                 </form>
 
             </div>
@@ -262,7 +294,7 @@
     </section>
 
     <footer>
-        <div class="row justify-content-center align-itmes-center">   
+        <div class="row justify-content-center align-itmes-center">
             <div class="col-lg-4 col-sm-12 footer-img-link sm-mb-5">
                 <a href="#home">
                     <img src="./assets/images/logo_white.svg" alt="Rauss Logo">
@@ -281,7 +313,7 @@
             </div>
 
         </div>
-   
+
     </footer>
 
     <!-- JQUERY MIN -->
@@ -298,6 +330,7 @@
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/gsap.min.js"></script>
     <script src="./assets/js/portfolioImageZoom.js"></script>
+    <script src="./assets/js/headerMobile.js"></script>
     <script>
         gsap.set(".cardWrapper", {
             perspective: 800
