@@ -1,0 +1,36 @@
+footer {
+    background: rgb(104, 31, 43);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 70px;
+}
+
+.fab{
+    color: #fafafa;
+    font-size: 30px;
+    padding: 0 5px;
+    transition: .7s;
+}
+
+.fab:hover {
+    transform: scale(1.3);
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: 200px;
+    margin-right: 0;
+    margin-left: auto;
+}
+footer span {
+    float: right;
+    color: #fafafa;
+}
+
+footer img {
+    max-width: 250px;
+    max-height: 100px;
+}
